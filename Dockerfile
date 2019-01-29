@@ -12,4 +12,4 @@ CMD ruby /app/simple_server.rb
 # docker image build -t docker_hands_on .
 #
 # Run command:
-# docker run -p 80:8080 --name simple_server docker_hands_on
+# docker run -p 80:8080 --rm -t --name simple_server docker_hands_on
