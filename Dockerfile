@@ -1,12 +1,14 @@
 FROM ruby:2.5.3
 
-WORKDIR /app
+RUN gem install mysql2
 
-COPY . /app
+WORKDIR /app
 
 EXPOSE 8080
 
 CMD ruby /app/simple_server.rb
+
+COPY . /app
 
 # Build command:
 # docker image build -t docker_hands_on .
